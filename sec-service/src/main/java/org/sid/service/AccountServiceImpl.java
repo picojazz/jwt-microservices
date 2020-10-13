@@ -32,7 +32,7 @@ public class AccountServiceImpl implements AccountService {
         AppUser appUser = new AppUser();
         appUser.setUsername(username);
         appUser.setPassword(bCryptPasswordEncoder.encode(password));
-        appUser.setActived(false);
+        appUser.setActived(true);
         appUserRepository.save(appUser);
         addRoleToUser(username,"USER");
         return appUser;

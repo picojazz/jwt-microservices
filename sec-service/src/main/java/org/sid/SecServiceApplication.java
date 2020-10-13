@@ -2,6 +2,7 @@ package org.sid;
 
 import org.sid.dao.AppUserRepository;
 import org.sid.entities.AppRole;
+import org.sid.entities.AppUser;
 import org.sid.service.AccountService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -28,6 +29,8 @@ public class SecServiceApplication {
             Stream.of("user1","user2","user3","admin").forEach(u ->{
                 accountService.saveUser(u,"1234","1234");
             });
+
+            accountService.addRoleToUser("admin","ADMIN");
             appUserRepository.findAll().forEach(System.out::println);
         };
     }
