@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### security jwt params ###
-src/main/java/org/sid/security/SecurityParams.java
+/src/main/java/org/sid/security/SecurityParams.java
