@@ -1,4 +1,4 @@
-package org.sid.secutity;
+package org.sid.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

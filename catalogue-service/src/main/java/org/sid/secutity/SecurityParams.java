@@ -1,4 +1,4 @@
-package org.sid.security;
+package org.sid.secutity;
 
 import java.util.Date;
 
